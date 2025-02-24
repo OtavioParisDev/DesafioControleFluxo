@@ -2,9 +2,11 @@ import java.util.Scanner;
 
 public class Contador {
     public static void main(String[] args) {
+
         Scanner terminal = new Scanner(System.in);
         System.out.println("Digite o primeiro parâmetro");
         int parametroUm = terminal.nextInt();
+
         System.out.println("Digite o segundo parâmetro");
         int parametroDois = terminal.nextInt();
 
@@ -21,7 +23,7 @@ public class Contador {
             throw new ParametrosInvalidosException();
 
         int contagem = parametroDois - parametroUm;
-        //realizar o for para imprimir os números com base na variável contagem
+
         System.out.println("Imprimindo o número de ocorrências: ");
 
         for(int ocorrencia = contagem; ocorrencia >0; ocorrencia-- ){
